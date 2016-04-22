@@ -1,5 +1,8 @@
+<!-- call title helper method and pass @author.name as argument, insert that value wherever :title symbol is expecting content -->
+<% title @author.name %>
+
 <h1><%= @author.name %></h1>
 <p>Posts:</p>
 <% @author.posts.each do |post| %>
-  <div><%= post.title %></div>
+  <div><%= post.title %> - <%= last_updated post%></div>
 <% end %>

@@ -1,2 +1,7 @@
+<!-- call title helper method and pass @post.title argument, will be the value wherever :title is expecting content -->
+<% title @post.title %>
+
 <h1><%= @post.title %></h1>
+<!-- call helper method and pass in @post argument-->
+<p><%= last_updated @post %></p>
 <p><%= @post.description %></p>

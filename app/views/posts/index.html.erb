@@ -1,3 +1,4 @@
 <% @posts.each do |post| %>
-  <div><%= post.title %></div>
+  <!-- call helper method and pass in post argument -->
+  <div><%= post.title %></div> - <%= last_updated post%>
 <% end %>
